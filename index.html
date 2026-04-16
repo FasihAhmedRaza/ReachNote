@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Reach Note</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand:   #1B3D6E;
+      --brand-l: #EEF4FF;
+      --green:   #22C55E;
+      --text:    #1C1C1A;
+      --muted:   #6B7280;
+      --border:  #E5E7EB;
+      --bg:      #F8F9FB;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--brand);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 0 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+    .logo-wrap {
+      width: 64px; height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    .brand-name { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -0.5px; }
+    .brand-tag  { font-size: 13px; color: rgba(255,255,255,0.65); font-style: italic; }
+    header h1   { font-size: 28px; font-weight: 800; color: #fff; margin-top: 8px; }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85);
+      font-size: 12px; font-weight: 600;
+      padding: 4px 14px; border-radius: 20px;
+    }
+
+    /* ── MAIN ── */
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 60px; }
+
+    /* summary pills */
+    .pills {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 32px;
+    }
+    .pill {
+      display: flex; align-items: center; gap: 7px;
+      background: var(--brand-l);
+      color: var(--brand);
+      font-size: 13px; font-weight: 600;
+      padding: 7px 14px; border-radius: 20px;
+    }
+    .pill span { font-size: 16px; }
+
+    /* banner card */
+    .banner-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex; gap: 16px; align-items: flex-start;
+      margin-bottom: 28px;
+    }
+    .banner-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      background: var(--brand-l);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .banner-card h2 { font-size: 16px; font-weight: 800; color: var(--brand); margin-bottom: 6px; }
+    .banner-card p  { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+    /* sections */
+    .section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .section-header {
+      background: var(--brand);
+      padding: 12px 20px;
+    }
+    .section-header h2 {
+      font-size: 13px; font-weight: 800;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.8px; text-transform: uppercase;
+    }
+    .section-body { padding: 20px; }
+    .section-body p { font-size: 14px; color: #444; line-height: 1.8; }
+    .section-body ul {
+      margin: 10px 0 0 18px;
+      font-size: 14px; color: #444; line-height: 2;
+    }
+
+    /* contact */
+    .contact-card {
+      background: var(--brand-l);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex; align-items: center; gap: 16px;
+      margin-top: 28px;
+    }
+    .contact-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: var(--brand);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    .contact-card h3 { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .contact-card a  { font-size: 14px; color: var(--brand); font-weight: 600; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: #9CA3AF;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+    footer a { color: var(--brand); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      .banner-card { flex-direction: column; }
+      .pills .pill { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-wrap">📍</div>
+    <div class="brand-name">Reach Note</div>
+    <div class="brand-tag">Arrive. The note appears. Zero taps required.</div>
+    <h1>Privacy Policy</h1>
+    <span class="badge">Last Updated: April 2025 &nbsp;·&nbsp; Version 1.0</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- Summary pills -->
+  <div class="pills">
+    <div class="pill"><span>☁️</span> No cloud storage</div>
+    <div class="pill"><span>📊</span> No analytics</div>
+    <div class="pill"><span>👁️</span> No tracking</div>
+    <div class="pill"><span>🔒</span> No data sharing</div>
+    <div class="pill"><span>📴</span> 100% offline</div>
+  </div>
+
+  <!-- Overview banner -->
+  <div class="banner-card">
+    <div class="banner-icon">🛡️</div>
+    <div>
+      <h2>Your Privacy is Fully Protected</h2>
+      <p>Reach Note is a completely offline application. All your notes, checklists, reminders, and budgets are stored exclusively on your device. We have no servers, no accounts, and we collect zero personal information — ever.</p>
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <div class="section">
+    <div class="section-header"><h2>1. Overview</h2></div>
+    <div class="section-body">
+      <p>Reach Note ("we", "our", or "the app") is a personal productivity application that helps you capture, manage, and remember important information. This Privacy Policy explains how the app handles your data.</p>
+      <p style="margin-top:10px">We are fully committed to protecting your privacy. In short: <strong>we collect nothing, store nothing externally, and share nothing.</strong></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>2. Data We Do NOT Collect</h2></div>
+    <div class="section-body">
+      <p>Reach Note does not collect, transmit, or store any of the following:</p>
+      <ul>
+        <li>Personal identification information (name, email, phone number)</li>
+        <li>Location data or GPS coordinates</li>
+        <li>Device identifiers or advertising IDs</li>
+        <li>Usage analytics or crash reports</li>
+        <li>Any data sent to external servers</li>
+      </ul>
+      <p style="margin-top:12px"><strong>There are no servers. Reach Note is a fully offline application.</strong></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>3. Data Stored on Your Device</h2></div>
+    <div class="section-body">
+      <p>All notes, checklists, budgets, categories, and reminder settings you create are stored exclusively on your device using local storage (AsyncStorage).</p>
+      <p style="margin-top:10px">This data never leaves your device. It is not backed up to any cloud service by the app itself (though your device's own backup system, such as Google Backup, may include it as part of app data).</p>
+      <p style="margin-top:10px">You can permanently delete all app data at any time by uninstalling the app.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>4. Notifications & Reminders</h2></div>
+    <div class="section-body">
+      <p>Reach Note uses local notifications to deliver reminders you explicitly set. These notifications:</p>
+      <ul>
+        <li>Are scheduled entirely on your device</li>
+        <li>Do not require an internet connection</li>
+        <li>Are not processed by any external server</li>
+        <li>Can be cancelled at any time by marking a note as done or by turning off notifications in your device settings</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>5. Location Feature</h2></div>
+    <div class="section-body">
+      <p>You may optionally type a location label on any note (e.g., "G Mart" or "Level 3 Parking"). This is plain text stored locally on your device.</p>
+      <p style="margin-top:10px">When you tap a location, the app opens your device's native Maps application (Google Maps or Apple Maps). This action transfers only the text label to that external app. <strong>Reach Note does not access your GPS or device location at any time.</strong></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>6. Third-Party Services</h2></div>
+    <div class="section-body">
+      <p>Reach Note does not integrate with any third-party analytics, advertising, or tracking services.</p>
+      <p style="margin-top:10px">The app is built on the Expo / React Native framework. Expo may collect minimal anonymous diagnostic data about development tools during development builds only. This is completely separate from user data and does not apply to production/release builds.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>7. Children's Privacy</h2></div>
+    <div class="section-body">
+      <p>Reach Note does not knowingly collect any information from anyone, including children under the age of 13. Since no data is collected at all, the app is safe for users of all ages.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>8. Data Security</h2></div>
+    <div class="section-body">
+      <p>Since all data is stored locally on your device, security depends on your device's own security measures (screen lock, encryption, etc.).</p>
+      <p style="margin-top:10px">We recommend keeping your device secured and up to date. We are not responsible for data accessed by other apps or persons with physical access to your device.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>9. Changes to This Policy</h2></div>
+    <div class="section-body">
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this page and communicated through app updates.</p>
+      <p style="margin-top:10px">Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header"><h2>10. Contact Us</h2></div>
+    <div class="section-body">
+      <p>If you have any questions or concerns about this Privacy Policy, please reach out to us:</p>
+    </div>
+  </div>
+
+  <!-- Contact card -->
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <div>
+      <h3>Questions about privacy?</h3>
+      <a href="mailto:support@aiwithfsih.com">support@aiwithfsih.com</a><br/>
+      <a href="https://aiwithfsih.com" target="_blank" rel="noopener">aiwithfsih.com</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 <strong>Reach Note</strong> · <a href="https://aiwithfsih.com">aiwithfsih.com</a></p>
+  <p style="margin-top:6px">All data stays on your device. Always.</p>
+</footer>
+
+</body>
+</html>
